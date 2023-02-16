@@ -1,0 +1,79 @@
+/* O primeiro valor do box-shadow é para baixo e o segundo é para esquerda ,se você quiser outras direções utilize números negativos */
+
+body{
+    background-color: #17181c;
+}
+.Pai{
+    font-family: fantasy;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+h1{
+    letter-spacing: 1px;
+    color: black;
+    border:  #ff96ff;
+    text-shadow: 15px 15px 7px #ff96ad ,-1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,1px -1px 0px #FFF,                  
+     1px 0px 0px #FFF;;
+    
+}
+div{
+    
+    width: auto;
+    
+}
+
+button{
+    position: relative;
+    margin: 15px;
+    border:none;
+    transition: .4s ease-in;
+    z-index: 1;
+    padding: 50px;
+    font-size: 25px;
+    border-radius: 20px;
+}
+button::before, button::after{
+    position: absolute;
+    content: " ";
+    z-index: -1;
+}
+.btn-1:hover{
+    transition-duration: 4s;
+    box-shadow: inset -10.5em 0 0 0 #ff96ad ,inset 10.5em 0 0 0 #ff96ad;
+}
+.btn-2::after{
+    height: 0;
+    left: 0;
+    top:0;
+    transition-duration: 0.6s;
+    width: 100%;
+}
+.btn-2:hover::after{
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ff96ad;
+}
+.btn-3:hover{
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad , 0 0 25px #ff96ad , 0 0 50px #ff96ad ,0 0 200px #ff96ad;
+}
+.btn-4:hover{
+    
+    box-shadow: 10px 10px 0px  #ff96ad ;
+    top: -5px;
+    left:-5px;
+}
+.btn-5:hover{
+    border: 2px solid #ff96ad;
+    color: #ff96ad;
+    background-color: #17181c;
+}
+
+
+
+
+/* Tirado desse site */
+/* https://www.instagram.com/p/CohROwzMrCy/ */

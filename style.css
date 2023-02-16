@@ -75,5 +75,20 @@ button::before, button::after{
 
 
 
+
+.footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:150px;
+}
+a{
+    font-style: italic;
+    text-decoration: none;
+    color: #ff96ad;
+}
+
+
 /* Tirado desse site */
 /* https://www.instagram.com/p/CohROwzMrCy/ */
